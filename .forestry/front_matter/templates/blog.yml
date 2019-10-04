@@ -1,0 +1,23 @@
+---
+label: Blog
+is_partial: false
+fields:
+  - type: text
+    name: title
+    label: Page Title
+    config:
+      required: true
+  - type: boolean
+    name: aside
+    label: Aside
+  - type: text
+    name: collectionpage
+    label: Collection page
+  - type: text
+    name: layout
+    label: Layout
+    hidden: true
+    default: blog
+    config:
+      required: true
+pages: []

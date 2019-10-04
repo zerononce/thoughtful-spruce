@@ -1,0 +1,24 @@
+---
+label: Categories Page
+is_partial: false
+fields:
+  - type: text
+    name: title
+    label: Page Title
+    config:
+      required: true
+  - type: text
+    name: excerpt
+    label: Excerpt
+  - type: boolean
+    name: aside
+    label: Aside
+  - type: text
+    name: layout
+    label: Layout
+    hidden: true
+    default: categories
+    config:
+      required: true
+pages:
+  - categories.md

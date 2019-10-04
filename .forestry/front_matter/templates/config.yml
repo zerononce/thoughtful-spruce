@@ -1,0 +1,196 @@
+---
+label: Config
+hide_body: true
+is_partial: false
+fields:
+  - type: text
+    name: theme
+    label: Theme
+    hidden: true
+  - type: text
+    name: title
+    label: Site Title
+  - type: file
+    name: logo
+    label: Site Logo
+  - type: text
+    name: baseurl
+    label: Base URL
+    description: Serve the website from the given base URL
+    hidden: true
+  - type: text
+    name: permalink
+    label: Permalink
+    description: 'The output path for your pages, posts, or collections.'
+    hidden: true
+    default: '/posts/:slug:output_ext'
+  - type: field_group
+    name: collections
+    label: collections
+    fields:
+      - type: field_group
+        name: posts
+        label: posts
+        fields:
+          - type: text
+            name: title
+            label: Collection Title
+          - type: boolean
+            name: output
+            label: Output
+          - type: text
+            name: description
+            label: Collection Description
+          - type: textarea
+            name: feature_text
+            label: Collection Feature Text
+            config:
+              wysiwyg: true
+              schema:
+                format: markdown
+          - type: file
+            name: feature_image
+            label: Collection Feature Image
+  - type: field_group_list
+    name: navigation_header
+    label: Header Navigation
+    fields:
+      - type: text
+        name: title
+        label: Button title
+        config:
+          required: true
+      - type: text
+        name: url
+        label: URL
+    config:
+      labelField: title
+  - type: field_group_list
+    name: navigation_footer
+    label: Footer Navigation
+    fields:
+      - type: text
+        name: title
+        label: Button title
+        config:
+          required: true
+      - type: text
+        name: url
+        label: URL
+    config:
+      labelField: title
+  - type: text
+    name: email
+    label: Site Email
+  - type: field_group
+    name: social_links
+    label: Social Links
+    description: Leave empty to hide
+    fields:
+      - type: text
+        name: Twitter
+        label: Twitter
+      - type: text
+        name: LinkedIn
+        label: LinkedIn
+      - type: text
+        name: Googleplus
+        label: Google+
+      - type: text
+        name: GitHub
+        label: GitHub
+      - type: text
+        name: link
+        label: link
+      - type: text
+        name: RSS
+        label: RSS
+  - type: field_group
+    name: sharing_links
+    label: Sharing Links
+    description: Leave empty to hide
+    fields:
+      - type: select
+        name: Twitter
+        label: Twitter
+        config:
+          source:
+            type: custom
+          options:
+            - ''
+            - '#0d94e7'
+      - type: select
+        name: facebook
+        label: facebook
+        config:
+          source:
+            type: custom
+          options:
+            - ''
+            - '#3B5998'
+      - type: select
+        name: Googleplus
+        label: Google+
+        config:
+          source:
+            type: custom
+          options:
+            - ''
+            - '#DC4E41'
+      - type: select
+        name: Pinterest
+        label: Pinterest
+        config:
+          source:
+            type: custom
+          options:
+            - ''
+            - '#BD081C'
+      - type: select
+        name: LinkedIn
+        label: LinkedIn
+        config:
+          source:
+            type: custom
+          options:
+            - ''
+            - '#0077B5'
+      - type: select
+        name: tumblr
+        label: tumblr
+        config:
+          source:
+            type: custom
+          options:
+            - ''
+            - '#36465D'
+      - type: select
+        name: Reddit
+        label: Reddit
+        config:
+          source:
+            type: custom
+          options:
+            - ''
+            - '#FF4500'
+      - type: select
+        name: HackerNews
+        label: Hacker News
+        config:
+          source:
+            type: custom
+          options:
+            - ''
+            - '#ff6600'
+      - type: select
+        name: DesignerNews
+        label: Designer News
+        config:
+          source:
+            type: custom
+          options:
+            - ''
+            - '#2D72D9'
+      - type: boolean
+        name: Email
+        label: Email
