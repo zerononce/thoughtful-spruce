@@ -1,44 +1,44 @@
 ---
 label: Page
-is_partial: false
+hide_body: false
 fields:
-  - type: text
-    name: title
-    label: Page Title
-    config:
-      required: true
-  - type: textarea
-    name: feature_text
-    label: Feature text
-    config:
-      wysiwyg: true
-      schema:
-        format: markdown
-  - type: file
-    name: feature_image
-    label: Feature image
-  - type: text
-    name: excerpt
-    label: Excerpt
-  - type: boolean
-    name: aside
-    label: Aside
-  - type: boolean
-    name: indexing
-    label: Indexing
-  - type: boolean
-    name: sitemap
-    label: Sitemap
-  - type: text
-    name: permalink
-    label: Permalink
-  - type: text
-    name: layout
-    label: Layout
-    hidden: true
-    default: page
-    config:
-      required: true
+- type: text
+  name: title
+  label: Page Title
+  config:
+    required: true
+- type: textarea
+  name: feature_text
+  label: Feature text
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: file
+  name: feature_image
+  label: Feature image
+- type: text
+  name: excerpt
+  label: Excerpt
+- type: boolean
+  name: aside
+  label: Aside
+- type: boolean
+  name: indexing
+  label: Indexing
+- type: boolean
+  name: sitemap
+  label: Sitemap
+- type: text
+  name: permalink
+  label: Permalink
+- type: text
+  name: layout
+  label: Layout
+  hidden: true
+  default: page
+  config:
+    required: true
 pages:
-  - 404.md
-  - about.md
+- about.md
+- 404.md

@@ -1,47 +1,47 @@
 ---
 label: Post
-is_partial: false
+hide_body: false
 fields:
-  - type: text
-    name: title
-    label: Page Title
-    config:
-      required: true
-  - type: textarea
-    name: feature_text
-    label: Feature text
-    config:
-      wysiwyg: true
-      schema:
-        format: markdown
-  - type: file
-    name: feature_image
-    label: Feature image
-  - type: text
-    name: excerpt
-    label: Excerpt
-  - type: file
-    name: image
-    label: Image
-  - type: boolean
-    name: comments
-    label: Enable Comments
-    default: true
-  - type: boolean
-    name: aside
-    label: Aside
-  - type: list
-    name: categories
-    label: Categories
-  - type: boolean
-    name: indexing
-    label: Indexing
-  - type: text
-    name: layout
-    label: Layout
-    hidden: true
-    default: post
-    config:
-      required: true
+- type: text
+  name: title
+  label: Page Title
+  config:
+    required: true
+- type: textarea
+  name: feature_text
+  label: Feature text
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: file
+  name: feature_image
+  label: Feature image
+- type: text
+  name: excerpt
+  label: Excerpt
+- type: file
+  name: image
+  label: Image
+- type: boolean
+  name: comments
+  label: Enable Comments
+  default: true
+- type: boolean
+  name: aside
+  label: Aside
+- type: list
+  name: categories
+  label: Categories
+- type: boolean
+  name: indexing
+  label: Indexing
+- type: text
+  name: layout
+  label: Layout
+  hidden: true
+  default: post
+  config:
+    required: true
 pages:
-  - _posts/2018-08-22-hello-world.md
+- _posts/2018-08-22-hello-world.md
